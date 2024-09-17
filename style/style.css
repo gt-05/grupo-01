@@ -5,9 +5,7 @@
 }
 
 ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
+
 }
 
 a {
@@ -19,4 +17,11 @@ a {
 }
 .menu-item{
     color: black;
+    margin: 10px;
+}
+#Container-nav-header{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
 }
