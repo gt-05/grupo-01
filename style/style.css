@@ -98,3 +98,23 @@ body {
     position: absolute;
     bottom: 15px;
   }
+  button{
+    background-color: black;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.botao a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao{
+   
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
