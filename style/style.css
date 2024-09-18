@@ -14,24 +14,28 @@ ul {
 a {
     text-decoration: none;
 }
-#Container-header{
+
+#Container-header {
     background-color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    
+
     border: 1px;
 }
-.menu-item{
+
+.menu-item {
     color: black;
     margin: 15px;
 }
-#Container-nav-header{
+
+#Container-nav-header {
     background-color: white;
     display: flex;
     align-items: center;
 }
-body{
+
+body {
     background-color: #f4f4f4;
 }
