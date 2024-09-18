@@ -40,32 +40,33 @@ body {
     background-color: #f4f4f4;
 }
 
-.container-hero{
-    display:block;
+.container-hero {
+    display: block;
     align-items: center;
     padding: 30px;
 }
 
-.text-1{
-    padding-top:20px;
+.text-1 {
+    padding-top: 20px;
     text-align: center;
     font-family: sans-serif;
 }
-.text-4{
+
+.text-4 {
     padding-top: 20px;
     text-align: center;
-    font:caption;
-    font-size:18px;
+    font: caption;
+    font-size: 18px;
     line-height: 1.5;
 }
 
-.container-card{
-   display: flex;
-   justify-content: center;
-   align-items: center;
+.container-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.section-card{
+.section-card {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -73,9 +74,9 @@ body {
     width: 1000px;
     height: 200px;
     padding: 10px;
-  }
-  
-  .card-item{
+}
+
+.card-item {
     width: 300px;
     height: 120px;
     background-color: white;
@@ -85,36 +86,54 @@ body {
     margin: 20px;
     position: relative;
 
-  }
-  
-  .card-item img{
+}
+
+.card-item img {
     width: 50px;
     object-fit: contain;
     margin-bottom: 20px;
-    
-  }
-  
-  .card-description{
+
+}
+
+.card-description {
     position: absolute;
     bottom: 15px;
-  }
-  button{
+}
+
+button {
     background-color: black;
     border: none;
     padding: 8px 14px;
     border-radius: 5px;
     cursor: pointer;
 }
-.botao a{
+
+.botao a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-.botao{
-   
+.botao {
+
     align-items: center;
     text-align: center;
-    margin-top: 50px;
+    margin: 50px 0;
 }
 
+footer {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 8pt;
+}
+
+.rodape {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    align-items: center;
+    text-align: center;
+}
