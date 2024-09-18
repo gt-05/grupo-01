@@ -5,7 +5,10 @@
 }
 
 ul {
-
+    display: inline-flex;
+    list-style: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 a {
@@ -13,15 +16,19 @@ a {
 }
 #Container-header{
     background-color: white;
-    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    border: 1px;
 }
 .menu-item{
     color: black;
-    margin: 10px;
+    margin: 15px;
 }
 #Container-nav-header{
+    background-color: white;
     display: flex;
-    width: 100vw;
     align-items: center;
-    justify-content: space-between;
 }
