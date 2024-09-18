@@ -15,7 +15,7 @@ a {
     text-decoration: none;
 }
 
-#Container-header {
+#container-header {
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -30,7 +30,7 @@ a {
     margin: 15px;
 }
 
-#Container-nav-header {
+#container-nav-header {
     background-color: white;
     display: flex;
     align-items: center;
