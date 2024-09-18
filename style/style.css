@@ -28,6 +28,7 @@ a {
 .menu-item {
     color: black;
     margin: 15px;
+    font-weight: bold;
 }
 
 #container-nav-header {
