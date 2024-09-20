@@ -25,6 +25,18 @@ a {
     border: 1px;
 }
 
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container-main{
+    display: flex;
+    justify-content: space-around;
+    gap: 70px;
+}
 .menu-item {
     color: black;
     margin: 15px;
@@ -39,6 +51,7 @@ a {
 
 body {
     background-color: #f4f4f4;
+    overflow-x: hidden;
 }
 
 .container-hero {
@@ -133,22 +146,21 @@ footer {
 }
 
 .rodape {
-    position: absolute;
     bottom: 0;
     width: 100vw;
     align-items: center;
     text-align: center;
-}
+} 
+
+
 
 #section-container-frete{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 600px;
-    margin-top: 100px;
-    width: 800px;
-    height: 550px;
+    margin: 100px auto 0 auto;
+   
 }
 
 .section-items-frete{
@@ -157,6 +169,7 @@ footer {
     width: 600px;
     height: 65px;
     border: 0.5px solid rgb(180, 178, 178)
+
     
 }
 
@@ -194,7 +207,6 @@ footer {
     font-size: 20px;
     font-weight: bold;
 }
-
 
 /* seção do form contato */
 #box{
@@ -297,18 +309,19 @@ padding-top: 5px;
     padding-bottom: 20px;   
 }
 .button-calc{
-     
-        border: none;
-        background-color: #333;
-        color: #fff;
-        padding: 10px;
-        text-transform: uppercase;
-        font-weight: bold;
-        width: 100%;
-        transition: 0.30;
-        cursor: pointer;
-    }
-    .button-calc:hover{
-        box-shadow: 0 3px 4px 3px rgb(92, 90, 90);
-        transform: translateY(-0.25em);
-    }
+    border: none;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 100%;
+    transition: 0.30;
+    cursor: pointer;
+}
+.button-calc:hover{
+    box-shadow: 0 3px 4px 3px rgb(92, 90, 90);
+    transform: translateY(-0.25em);
+}
+
+
