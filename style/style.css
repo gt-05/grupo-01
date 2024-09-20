@@ -152,6 +152,37 @@ footer {
     text-align: center;
 } 
 
+/* Seção de origem e destino*/
+.frete-resultado{
+    display: block;
+    margin-top: 100px;
+}
+.addres-block{
+    display: flex;
+    flex-direction: row;
+    gap: 0 20px;
+    border-bottom: 2.5px rgba(128, 128, 128, 0.17) solid;
+
+    overflow: auto;
+    max-width: fit-content ;
+    margin-bottom: 0;
+}
+.addres-item{
+    border: none;
+    display: block;
+    margin-bottom: 10px;
+}
+.addres-item h4{
+    font-weight: bold;
+}
+.addres-item p{
+    font-weight: lighter;
+}
+.section-container-frete{
+    margin-top: 10px;
+}
+
+
 
 
 #section-container-frete{
@@ -159,7 +190,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 100px auto 0 auto;
+    margin: 30px auto 0 auto;
+
    
 }
 
@@ -168,8 +200,8 @@ footer {
     margin-bottom: 20px;
     width: 600px;
     height: 65px;
-    border: 0.5px solid rgb(180, 178, 178)
-
+    border: 0.5px solid rgb(180, 178, 178);
+    
     
 }
 
