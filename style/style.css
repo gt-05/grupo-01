@@ -1,8 +1,8 @@
 * {
     font-family: sans-serif;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 ul {
@@ -142,6 +142,7 @@ footer {
     text-align: center;
     padding: 15px;
     font-size: 8pt;
+    margin-top: 60px;
 }
 
 .rodape {
@@ -207,6 +208,57 @@ footer {
     font-weight: bold;
 }
 
+/* seção do form contato */
+#box{
+    display: flex;
+    justify-content: center;
+}
+#container-form-contato{
+    display: flex;
+    flex-direction: column;
+    width:600px;
+	height:460px;
+    border-radius: 10px 10px;
+    background-color: white;
+    font-weight: 600;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.144);
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 40px 20px 40px 20px;
+    row-gap: 20px;
+}
+#button-form-contato{
+    border:none;
+    background-color: #333333;
+    color:white;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 300px;
+    margin-top: 40px;
+    align-self: flex-end;
+    border-radius: 3px;
+}
+.campos{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    font-family: skie otf;
+    row-gap: 3px;
+    color: rgb(46, 46, 46);
+}
+.input-contato{
+    border: 1px solid rgba(128, 128, 128, 0.583);
+    border-radius: 4px;
+    height: 30px;
+    padding: 0px 0 0 5px;
+}
+#message{
+width: 100%;
+height: 150px;
+padding-top: 5px;
+}
+
 .container-form-calc{
     height: 330px;
     width: 400px;
@@ -257,18 +309,19 @@ footer {
     padding-bottom: 20px;   
 }
 .button-calc{
-     
-        border: none;
-        background-color: #333;
-        color: #fff;
-        padding: 10px;
-        text-transform: uppercase;
-        font-weight: bold;
-        width: 100%;
-        transition: 0.30;
-        cursor: pointer;
-    }
-    .button-calc:hover{
-        box-shadow: 0 3px 4px 3px rgb(92, 90, 90);
-        transform: translateY(-0.25em);
-    }
+    border: none;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 100%;
+    transition: 0.30;
+    cursor: pointer;
+}
+.button-calc:hover{
+    box-shadow: 0 3px 4px 3px rgb(92, 90, 90);
+    transform: translateY(-0.25em);
+}
+
+
