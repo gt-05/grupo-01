@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 600px){
+    #container-form-contato{
+        width: 300px;
+    }
+    #button-form-contato{
+        width: 200px;
+    }
+}
