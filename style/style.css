@@ -358,6 +358,17 @@ padding-top: 5px;
     transform: translateY(-0.25em);
 }
 
+/* media querie da home*/
+@media (max-width:768px)  {
+    .section-card {
+        flex-direction: column;
+        height: 500px;
+    }
+    .card-item{
+        height: 500px;
+    }
+}
+
 
 @media screen and (max-width: 768px) {
    
