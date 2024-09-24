@@ -136,23 +136,8 @@ button {
     margin: 50px 0;
 }
 
-footer {
-    margin-top: 20px;
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    font-size: 8pt;
-    margin-top: 60px;
-}
 
-.rodape {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    align-items: center;
-    text-align: center;
-} 
+
 
 /* Seção de origem e destino*/
 .frete-resultado{
