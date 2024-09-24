@@ -221,7 +221,6 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
 }
 
 .item-frete{
@@ -304,10 +303,10 @@ height: 150px;
 padding-top: 5px;
 }
 /* final seção contato */
-.container-form-calc{
+/*.container-form-calc{
     height: 330px;
     width: 400px;
-    /* background-color: white; */
+    background-color: white; 
     background-color: var(--bg-color);
     border-radius: 2%;
     display: flex;
@@ -315,45 +314,44 @@ padding-top: 5px;
     align-items: center;
     margin-top: 100px;
     margin-left: 80px;
-}
-.box-in{
+}*/
+
+/*.box-in{
     padding-top: 16px;
     margin-top: 13px;
-}
-.text-label{
+}*/
+/*.text-label{
     display: block;
     font-weight: 700;
-    font-style: normal;
     font-size: 13px;
     margin-bottom: 1px;
-    display: block;
-}
+}*/
 
-.in-cep{
+/*.in-cep{
     align-items: center;
     height: 35px;
     width: 350px;
     display: flex;
     border: 1px rgb(189, 189, 189) solid;
     border-radius: 3px;
-    font-size: 16px;
-    
-}
-.in-pes{
-    align-items: center;
-    height: 35px;
+    font-size: 16px; 
+}*/
+
+/*.container-pes-qdt{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;   
+}*/
+
+/*.in-pes{
+    'align-items: center;    height: 35px;
     width: 160px;
     display: flex;
     border: 1px rgb(189, 189, 189) solid;
     border-radius: 3px;
     font-size: 16px;
-}
+}*/
 
-.box-pes-qdt{
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 20px;   
-}
 .button-calc{
     border: none;
     background-color: #333;
@@ -362,7 +360,7 @@ padding-top: 5px;
     text-transform: uppercase;
     font-weight: bold;
     width: 100%;
-    transition: 0.30;
+    transition: all 0.30;
     cursor: pointer;
 }
 .button-calc:hover{
