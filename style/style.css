@@ -146,13 +146,7 @@ button {
 }
 
 
-.rodape {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    align-items: center;
-    text-align: center;
-} 
+
 
 /* Seção de origem e destino*/
 .frete-resultado{
