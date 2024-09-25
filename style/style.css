@@ -10,58 +10,59 @@
     --color-text: black;
 }
 
-ul {
+/* ul {
     display: inline-flex;
     list-style: none;
     margin-top: 15px;
     margin-bottom: 15px;
-}
+} */
 
-a {
-    text-decoration: none;
-}
+/* a {
+     text-decoration: none; 
+} */
 
-#container-header {
-    /* background-color: white; */
-    background-color:var(--bg-color);
+/* #container-header {
+    background-color: white; 
+    background-color:var(--bg-color); 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     border: 1px;
-}
+} */
 
-#container{
+/* #container{
     display: flex;
     justify-content: center;
     align-items: center;
     
-}
+} */
 
-.container-main{
+/* .container-main{
     display: flex;
     justify-content: space-around;
     gap: 70px;
-}
-.menu-item {
-    color: black;
-    margin: 15px;
-    font-weight: bold;
-}
+} */
 
-#container-nav-header {
-    /* background-color: white; */
+/* .menu-item {
+    color: black; 
+    margin: 15px; 
+    font-weight: bold; 
+} */
+
+/* #container-nav-header {
+    background-color: white; 
     background-color: var(--bg-color);
     display: flex;
     align-items: center;
-}
+} */
 
-body {
+/* body {
     background-color: #f4f4f4;
     overflow-x: hidden;
     color: var(--color-text);
     
-}
+} */
 
 .container-hero {
     display: block;
@@ -174,68 +175,64 @@ button {
 .addres-item p{
     font-weight: lighter;
 }
-.section-container-frete{
+
+
+/* .section-container-frete{
     margin-top: 10px;
-}
+} */
 
-
-
-
-#section-container-frete{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 30px auto 0 auto;
+/* #section-container-frete{
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* margin: 30px auto 0 auto; 
+    
+}*/
 
    
-}
-
-.section-items-frete{
+/* .section-items-frete{
     /* background-color: white; */
-    background-color: var(--bg-color);
-    margin-bottom: 20px;
-    width: 600px;
-    height: 65px;
-    border: 0.5px solid rgb(180, 178, 178);
-    
-    
-}
-
-.box-frete{
+    /* background-color: var(--bg-color); */
+    /* margin-bottom: 20px; */
+    /* width: 600px; */
+    /* height: 65px; */
+    /* border: 0.5px solid rgb(180, 178, 178); } */
+      
+/* .box-frete{
     display: flex;
     justify-content: space-around;
     align-items: center;
     
-}
+} */
 
-.item-frete{
+/* .item-frete{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 5px;
-}
+} */
 
-.item-1{
+/* .item-1{
     font-size: 10px;
-}
+} */
 
-.item-2{
+/* .item-2{
     font-size: 15px;
     font-weight: bold;
-}
+} */
 
-.item-price{
+/* .item-price{
     font-size: 10px;
     font-weight: bold;
     color: grey;
     text-decoration: line-through;
-}
+} */
 
-.item-promotion{
+/* .item-promotion{
     font-size: 20px;
     font-weight: bold;
-}
+} */
 
 /* seção do form contato */
 #box{
