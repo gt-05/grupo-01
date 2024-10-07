@@ -25,26 +25,26 @@
         <div class="container-main flex justify-around gap-20">
             <aside>
                 <div class="container-form-calc">
-                    <form>
+                    <form id="calcularFrete">
                         <div class="box-in">
                             <label class="text-label">CEP de origem*</label>
-                            <input class="in-cep" type="text" placeholder="00000-000">
+                            <input id="cep-origem" class="in-cep" type="text" placeholder="00000-000">
                         </div>
 
                         <div class="box-in">
                             <label class="text-label">CEP de destino*</label>
-                            <input class="in-cep" type="text" placeholder="00000-000">
+                            <input id="cep-destino" class="in-cep" type="text" placeholder="00000-000">
                         </div>
 
                         <div class="box-pes-qdt">
                             <div class="box-in">
                                 <label class="text-label"> Peso*</label>
-                                <input class="in-pes" type="number" placeholder="0.1 a 10.000" min="0.1" max="10.000">
+                                <input id="peso" class="in-pes" type="number" placeholder="0.1 a 10.000" min="0.1" max="10.000">
                             </div>
 
                             <div class="box-in">
                                 <label class="text-label"> Quantidade*</label>
-                                <input class="in-pes" type="number" placeholder="1 a 10" min="1" max="10">
+                                <input id="quantidade" class="in-pes" type="number" placeholder="1 a 10" min="1" max="10">
                             </div>
                         </div>
 
@@ -57,12 +57,12 @@
                 <div class="addres-block">
                     <div class="addres-item">
                         <h4>Origem </h4>
-                        <p>Rua XYZ, Centro, Fortaleza, Ceará, 00000-000</p>
+                        <p id="enderecoOrigem">Rua XYZ, Centro, Fortaleza, Ceará, 00000-000</p>
 
                     </div>
                     <div class="addres-item">
                         <h4>Destino</h4>
-                        <p>Rua XYZ, Centro, Fortaleza, Ceará, 00000-000</p>
+                        <p id="enderecoDestino">Rua XYZ, Centro, Fortaleza, Ceará, 00000-000</p>
                     </div>
                 </div>
                 <div class="section-container-frete flex flex-col justify-center items-center mt-6">
@@ -259,7 +259,7 @@
     </div>
 
 
-
+    <script src="js/main.js" type="module"></script>
 
 </body>
 
