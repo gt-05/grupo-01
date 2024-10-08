@@ -1,8 +1,13 @@
+import Address from "./components/Address.js";
+import ServiceCard from "./components/ServiceCard.js";
+import ServiceListing from "./components/ServiceListing.js";
+
 const url = 'https://viacep.com.br/ws';
 
 const formCalcularFrete = document.getElementById('calcularFrete');
 const enderecoOrigem = document.getElementById('enderecoOrigem');
 const enderecoDestino = document.getElementById('enderecoDestino');
+
 formCalcularFrete.addEventListener('submit',function(event){
     //.addEventListener submit evento de click do formulario
     event.preventDefault();
@@ -14,8 +19,7 @@ formCalcularFrete.addEventListener('submit',function(event){
     fetch(`${url}/${cepOrigem.value}/json`).then(function(response){
         return response.json();
     }).then(function(responseBody){
-        enderecoOrigem.innerHTML = `${responseBody.logradouro}, ${responseBody.bairro}, ${responseBody.localidade}, ${responseBody.estado}, ${responseBody.cep}`;
-
+        enderecoOrigem.innerHTML = Address(responseBody);
     });
     
     let cepDestino = event.target.querySelector('#cep-destino');
@@ -23,7 +27,13 @@ formCalcularFrete.addEventListener('submit',function(event){
     fetch(`${url}/${cepDestino.value}/json`).then(function(response){
         return response.json();
     }).then(function(responseBody){
-        enderecoDestino.innerHTML = `${responseBody.logradouro}, ${responseBody.bairro}, ${responseBody.localidade}, ${responseBody.estado}, ${responseBody.cep}`
+        enderecoDestino.innerHTML = Address(responseBody);
+    })
+
+    fetch('js/db.json').then(function(response){
+        return response.json()
+    }).then(function(responseBody){
+        ServiceListing({data:responseBody,cepOrigem: cepOrigem, cepDestino: cepDestino})
     })
 });
 
