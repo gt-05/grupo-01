@@ -2,7 +2,7 @@ export default function Logo() {
     return(
         <>
         <div>
-            <span>Digital Store</span>
+            <span class="text-[36.4px] text-[#FFFFFF]">Digital Store</span>
         </div>
         </>
     )
