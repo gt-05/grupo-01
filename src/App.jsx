@@ -1,11 +1,13 @@
 
+import Header from "./components/hearder-comp/Header"
+
 
 function App() {
   
 
   return (
     <>
-      
+      <Header/>
     </>
   )
 }
