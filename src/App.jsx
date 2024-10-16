@@ -1,13 +1,13 @@
-import CardSale from "./components/cardssale"
-import Footer from "./components/footer"
+import OrderBy from "./components/OrderBy"
+
 
 function App() {
 
 
   return (
     <>
-      <CardSale />
-      <Footer />
+      <OrderBy/>
+      
     </>
   )
 }
