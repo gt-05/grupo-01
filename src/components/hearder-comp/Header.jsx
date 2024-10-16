@@ -9,9 +9,9 @@ import HeaderNav from './HeaderNav';
  function Header(){
     return (
         < >
-        <div className='flex'>
-            <HeaderSearch/>
+        <div className="flex  w-full h-48 border-solid border-inherit border-2">
             <HeaderLogo/>
+            <HeaderSearch/>
             <HeaderDir/>
             <HeaderCar/>
             <HeaderNav/>

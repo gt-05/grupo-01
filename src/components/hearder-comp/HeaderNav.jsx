@@ -4,22 +4,22 @@ import React from "react";
  function HeaderNav(){
     return (
     
-        <div  id="menu-link" className="inline-block">
-            <nav>
-                <ul>
-                    <li>
+        <div className="flex w-fit h-7  pt-32 absolute left-20">
+            <nav className="" >
+                <ul className="flex justify-around">
+                    <li className="px-4	">
                     <a href="#">Home</a>
                     </li>
 
-                    <li>
+                    <li className="px-4	" >
                     <a href="#">Produtos</a>
                     </li>
 
-                    <li>
+                    <li className="px-4	">
                     <a href="#">Categorias</a>
                     </li>
 
-                    <li>
+                    <li className="px-4	">
                    <a href="#">Meus Pedidos</a>
                     </li>
                 </ul>
