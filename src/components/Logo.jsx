@@ -1,4 +1,5 @@
 export default function Logo(props) {
+    // para mudar a cor da logo muda o valor da props ColorLogo
     return(
         <>   
         <svg width="253" height="44" viewBox="0 0 253 44" fill="none" xmlns="http://www.w3.org/2000/svg">
