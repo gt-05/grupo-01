@@ -1,15 +1,18 @@
-export default function ProductCard(){
+export default function ProductCard(props){
   return (
     <>
-    <div className=" grid grid-col-2 grid-flow-col gap-4 border-black-600">
-      <div className=" w-[292px] h-[bg-red-200 mt-20">
-        <img className="w-[100px] h-[54px] rotate-[-30deg]" src="https://s3-alpha-sig.figma.com/img/0e81/b622/335c3c97f56f40b95666e6039be52a9d?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fURrG6vgSCFQhnnPRZMoQ6BPACmIkQPUwUTFxchiMsc8UGkwKHZWHYMHNzM1c5kriD8~OnJUbS1udRJkaRxn2NsL2ghwHLtTdJMghn3cdd7qap-yy0tKlUlIiZTAXi2V8kAkL7ObDI7vT4iXOGGhfW3mockFfZ3gLNlQvyros11qMgPNX93cga8M30GUPQBjxYckAfL~BqIBAW8SBLv50Xeyzt809itliN8PW~Ulgj5rZYpPxafhouNc6c5zlnY1FGySm-copNlV-a819p7FYcwKoiPug1mTD2kgc4Kc61Ikh7YmOjNlduhMJwKgkWShHPvMfSuJH7x-7IwCcwCvfg__" alt="" />
-        <p>Tênis</p>
-        <p>K-Swiss V8 - Masculino</p>
-        <p>$200</p>
-        <p className="">$100</p>
+      <div className="w-[292px] h-[439px] bg-white-300 flex flex-col rounded border-2 mt-5">
+        <img className=" w-[248px] h-[134px] -rotate-[30deg] drop-shadow-[-3.61px_4.52px_6.52px_#000000] mt-20" src={props.imagem} alt={props.nome} />
+        <div className="flex flex-col gap-1 mt-[100px]">
+          <span className="text-xs text-[#8F8F8F] leading-6">Tênis</span>
+          <span className="  text-2xl font-normal leading-[38px]">{props.name}</span>
+          <div className="flex gap-2 ">
+            <span className="line-through">{props.price}</span>
+            <span className="font-bold">{props.priceDiscount}</span>
+          </div>
+        </div>
+        
       </div>
-    </div>
     </>
   )
 }
