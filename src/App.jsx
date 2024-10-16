@@ -1,11 +1,23 @@
-import Home from "./pages/Home"
-import { useState } from "react"
-function App() {
 
+<<<<<<< HEAD
     return(
       <>
       <Home/>
       </>
+=======
+import CardSale from "./components/cardssale"
+import Footer from "./components/footer"
+
+function App() {
+
+
+  return (
+    <>
+      <CardSale />
+      <Footer />
+
+    </>
+>>>>>>> 4adc0dfd82cb1f029fcf77aad555632314ef6a74
   )
 }
 
