@@ -1,11 +1,12 @@
 import Gallery from "../components/Gallery"
-import Footer from "../components/Footer"
 import Layout from "../components/Layout"
+import ProductListing from "../components/ProductListing"
 function App () {
     return(
         <>
         <Layout>
             <Gallery/>
+            <ProductListing/>
         </Layout>
         </>
     )
