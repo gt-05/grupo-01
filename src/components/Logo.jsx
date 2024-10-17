@@ -2,6 +2,7 @@ export default function Logo(props) {
     // para mudar a cor da logo muda o valor da props ColorLogo
     return(
 
+
     <>
         <div>
             <span className="text-[36.4px] text-[#FFFFFF]">Digital Store</span>

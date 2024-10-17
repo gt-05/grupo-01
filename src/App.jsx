@@ -19,7 +19,9 @@ function App() {
 
     <>
 
+
       <Layout/>
+
       <RouterProvider router = {routes}/>
       
       <CardSale />
@@ -38,6 +40,7 @@ function App() {
       
       
       <Footer/>
+
 
     </>
   )
