@@ -1,13 +1,16 @@
+import Layout from "./components/Layout"
 import CardSale from "./components/cardssale"
-import Footer from "./components/footer"
+
 
 function App() {
 
 
   return (
     <>
+
       <CardSale />
-      <Footer />
+      <Layout/>
+
     </>
   )
 }
