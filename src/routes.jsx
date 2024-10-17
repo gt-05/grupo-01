@@ -10,8 +10,8 @@ import ProductListingPage from "./pages/ProductListingPage";
 
 export default createBrowserRouter(createRoutesFromElements(
     <>
-        <Route path="/" element={HomePage} />
-        <Route path="/products" element={ProductListingPage}/>
+        <Route path="/Home" element={<HomePage/>} />
+        <Route path="/products" element={<ProductListingPage/>}/>
     </>
 
 ));

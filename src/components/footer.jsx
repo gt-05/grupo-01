@@ -2,8 +2,9 @@ import Logo from "./Logo"
 export default function Footer() {
     return (
 
+<>
+<footer class="w-full h-[454px] mt-[3290px] text-white bg-[#1F1F1F] ">
 
-            <footer class="w-full h-[454px] mt-[3290px] text-white bg-[#1F1F1F] ">
 
                 <div class="flex pt-8 justify-center">
 
@@ -47,7 +48,8 @@ export default function Footer() {
 
                 <span class="flex justify-center text-[13] leading-6 ">@2022 Digital College</span>
             </footer>
+            </>
 
-        </>
-    )
+       
+    );  
 } 

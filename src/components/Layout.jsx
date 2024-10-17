@@ -1,13 +1,13 @@
-import Footer from "../components/footer"
-import Gallery from "./Gallery"
-import CardSale from "./cardssale"
+    import Footer from "./Footer";
 
 export default function Layout (props){
     return (
-        <>
-        <Gallery />
-        <CardSale />
-        <Footer/>
-        </>
+      <>
+           
+            <main>
+                {props.children}
+            </main>
+            <Footer />
+      </>
     )
 }
