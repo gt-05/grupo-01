@@ -8,12 +8,12 @@ export default function Section(props){
         <>
         <div className="flex">
             <div className={position + ' grow'}>
-                <h2 className="text-2xl font-bold text-[#474747]">{props.title}</h2>
+                <h2 className="text-2xl font-bold text-[#474747] ml-14 ">{props.title}</h2>
             </div>
             {props.link &&(
                 <div className="w-auto flex gap-1">
                     <a className="text-[#C92071] text-lg" href={props.link.href}>{props.link.text}</a>
-                    <a href={props.link.href}><img className=" w-[24px] h-[24px] mt-1"src={arrow} alt="" /></a>
+                    <a href={props.link.href}><img className=" w-[24px] h-[24px] mt-1 mr-[60px]"src={arrow} alt="" /></a>
                    
                 </div>
             )}
