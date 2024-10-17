@@ -1,9 +1,8 @@
-ft-ProductListing
+
 import {
   RouterProvider
 } from "react-router-dom";
 import routes from "./routes";
-
 
 import CardSale from "./components/cardssale"
 import Footer from "./components/footer"
@@ -13,14 +12,16 @@ import ProductListing from "./components/ProductListing"
 import Layout from "./components/Layout"
 import CardSale from "./components/cardssale"
 
-
 function App() {
     
     
   return (
 
     <>
-ft-ProductListing
+
+
+      <Layout/>
+
       <RouterProvider router = {routes}/>
       
       <CardSale />
@@ -40,16 +41,9 @@ ft-ProductListing
       
       <Footer/>
 
-      <Layout/>
-     
 
     </>
   )
 }
 
-
-  </>
-
-)
-}
 export default App;
