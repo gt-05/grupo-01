@@ -1,3 +1,4 @@
+ft-ProductListing
 import {
   RouterProvider
 } from "react-router-dom";
@@ -9,12 +10,17 @@ import Footer from "./components/footer"
 import Section from "./components/Section"
 import ProductListing from "./components/ProductListing"
 
+import Layout from "./components/Layout"
+import CardSale from "./components/cardssale"
+
+
 function App() {
     
     
   return (
 
     <>
+ft-ProductListing
       <RouterProvider router = {routes}/>
       
       <CardSale />
@@ -33,6 +39,14 @@ function App() {
       
       
       <Footer/>
+
+      <Layout/>
+     
+
+    </>
+  )
+}
+
 
   </>
 
