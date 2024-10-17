@@ -8,8 +8,8 @@ function App() {
   return (
     <>
 
-      <CardSale />
       <Layout/>
+     
 
     </>
   )
