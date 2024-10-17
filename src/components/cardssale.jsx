@@ -1,8 +1,8 @@
         export default function CardSale() {
             return (
                 <>
-                    <section className=" my-10 mx- text-center ">
-                        <div className="px-[300px]">
+                    <section className=" my-10  text-center bg-slate-100">
+                        <div className="px-[300px] pt-[15px]">
                             <div className="">
                                 <h1 className="mb-2 text-start text-nowrap font-bold text-base text-[#474747] font-[inter]">
                                     Coleções em destaque
