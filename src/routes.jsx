@@ -1,6 +1,6 @@
-import { Route } from "react-router-dom";
+
 import {
-    Router,
+    Route,
     createBrowserRouter,
     createRoutesFromElements,
   } from "react-router-dom";
@@ -10,9 +10,9 @@ import ProductListingPage from "./pages/ProductListingPage";
 
 export default createBrowserRouter(createRoutesFromElements(
     <>
-        <Route path="/" element={HomePage} />
-        <Route path="/products" element={ProductListingPage}/>
+        <Route path="/Home" element={<HomePage/>} />
+        <Route path="/products" element={<ProductListingPage/>}/>
     </>
 
 ));
-    
+

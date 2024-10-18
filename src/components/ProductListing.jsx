@@ -2,7 +2,7 @@
 import ProductCard from "./ProductCard";
 export default function ProductListing(){
 
-    const products = [0,1,2,3,4,5,6,7];
+    const products = [0, 1, 2, 3, 4, 5, 6, 7];
     
     return (
         
