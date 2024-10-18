@@ -8,19 +8,19 @@ import React from "react";
             <nav className="" >
                 <ul className="flex justify-around">
                     <li className="px-4	">
-                    <a href="#">Home</a>
+                    <a className="no-underline hover:font-bold hover:text-rose-500 hover:underline" href="#">Home</a>
                     </li>
 
                     <li className="px-4	" >
-                    <a href="#">Produtos</a>
+                    <a className="no-underline hover:font-bold hover:text-rose-500 hover:underline" href="ProductListing">Produtos</a>
                     </li>
 
                     <li className="px-4	">
-                    <a href="#">Categorias</a>
+                    <a className="no-underline hover:font-bold hover:text-rose-500 hover:underline" href="Category">Categorias</a>
                     </li>
 
                     <li className="px-4	">
-                   <a href="#">Meus Pedidos</a>
+                   <a className="no-underline hover:font-bold hover:text-rose-500 hover:underline" href="MeusPedidos">Meus Pedidos</a>
                     </li>
                 </ul>
             </nav>
