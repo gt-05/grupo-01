@@ -1,15 +1,14 @@
-import CardSale from "./components/cardssale"
-import Footer from "./components/footer"
-
+import {
+  RouterProvider
+} from "react-router-dom";
+import routes from "./routes";
+import Layout from "./components/Layout";
 function App() {
-
-
   return (
     <>
-      <CardSale />
-      <Footer />
+      <RouterProvider router={routes} />
     </>
   )
 }
 
-export default App
+export default App;

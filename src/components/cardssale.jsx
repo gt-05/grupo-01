@@ -1,3 +1,4 @@
+
 import frame from "../assets/frame.png"
 import collection1 from '../assets/collection1.png'
 import collection2 from '../assets/collection2.png'
@@ -128,11 +129,5 @@ export default function CardSale() {
                                 <h3 className="mb-2  text-nowrap font-bold  text-[14px] text-[#474747] font-[inter]">Tênis</h3>
                             </div>
 
-                        </div>
 
-                    </div>
                 </div>
-            </section >
-        </>
-    )
-}
