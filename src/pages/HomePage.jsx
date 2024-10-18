@@ -5,6 +5,7 @@ import ProductListing from "../components/ProductListing"
 import Section from "../components/Section"
 import CardSale from "../components/cardssale"
 import Header from "../components/hearder-comp/Header"
+import ProductOffer from "../components/ProductOffer"
 function App () {
     return(
         <>
@@ -22,6 +23,7 @@ function App () {
             }>
             <ProductListing/>
             </Section>
+            <ProductOffer/>
             <Footer/>
         </Layout>
         </>

@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import ButtonOffer from './ButtonOffer';
 
 
 export default function Gallery() {
@@ -36,7 +37,7 @@ export default function Gallery() {
                         <span className="text-[16px] text-[#F6AA1C] font-bold">Melhores ofertas personalizadas</span>
                         <h1 className="text-[64px] text-[#1F1F1F] font-bold">Queima de estoque Nike</h1>
                         <p className="text-[18px] text-[#474747] font-normal">Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</p>
-                        <button className="text-[16px] text-[#F7F7FC] bg-[#C92071] font-bold mt-[40px] w-[220px] h-[48px] rounded-[8px]">Ver Ofertas</button>
+						<ButtonOffer/>
                     </div>
                 <img src='/src/assets/detalheSlide.png' class=" absolute z-10 ml-[1263px] mt-[78px]"/>
                 <img src={itemGalelly} class="absolute z-10 ml-[564.02px] origin-bottom -rotate-[19.34deg] hover:rotate-[25deg] duration-500 " />
