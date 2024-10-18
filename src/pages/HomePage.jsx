@@ -4,10 +4,12 @@ import Footer from "../components/Footer"
 import ProductListing from "../components/ProductListing"
 import Section from "../components/Section"
 import CardSale from "../components/cardssale"
+import Header from "../components/hearder-comp/Header"
 function App () {
     return(
         <>
         <Layout>
+            <Header/>
             <Gallery/>
             <CardSale/>
             <Section 
