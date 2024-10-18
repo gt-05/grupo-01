@@ -8,6 +8,7 @@ export default function CardSale() {
     return (
         <>
             <section className=" my-10  text-center bg-slate-100">
+
                 <div className="px-[300px] pt-[15px]">
                     <div className="">
                         <h1 className="mb-2 text-start text-nowrap font-bold text-base text-[#474747] font-[inter]">
@@ -33,6 +34,7 @@ export default function CardSale() {
                         </div>
                     </div>
                     <div className=" p-5 gap-3 justify-center">
+
 
                         <div>
                             <h1 className="mb-2  text-nowrap font-bold text-base text-[#474747] font-[inter]">
@@ -128,6 +130,11 @@ export default function CardSale() {
 
                                 <h3 className="mb-2  text-nowrap font-bold  text-[14px] text-[#474747] font-[inter]">Tênis</h3>
                             </div>
+                        </div>
+                        </div>
 
 
-                </div>
+                    </div>
+            </section>
+        </>
+        )}
