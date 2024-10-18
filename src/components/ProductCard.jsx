@@ -2,7 +2,7 @@ export default function ProductCard(props){
   return (
     <>
       <div className="w-[292px] h-[439px] bg-white-300 flex flex-col mt-10">
-        <div className="bg-[#F9F8FE] w-[292px] h-[321px] rounded border drop-shadow-[6px_16px_30px_#6962620D]">
+        <div className="bg-[#F9F8FE] w-[292px] h-[321px] rounded drop-shadow-[6px_16px_30px_#6962620D]">
           <div className="w-[96px] h-[32px] bg-[#E7FF86] rounded-[29px] mt-3 ml-5 text-center text-sm font-bold leading-[22px]">30% OFF</div>
           <img className=" w-[248px] h-[134px] -rotate-[30deg] drop-shadow-[-3.61px_4.52px_6.52px_#000000] mt-20" src={props.imagem} alt={props.nome} />
         
