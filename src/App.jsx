@@ -1,11 +1,15 @@
-import {
-  RouterProvider
-} from 'react-router-dom';
-import routes from './components/FilterBy';
+import FilterBy from "./components/FilterBy"
+import OrderBy from "./components/OrderBy"
+ 
 
 
 function App() {
-  return <RouterProvider router={routes} />
+  return (
+    <>
+      <OrderBy/>
+      <FilterBy/>
+    </>
+  )
 }
 
 export default App
