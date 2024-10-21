@@ -8,8 +8,9 @@ import HomePage from "./pages/HomePage";
 import ProductListingPage from "./pages/ProductListingPage";
 export default createBrowserRouter(createRoutesFromElements(
     <>
-        <Route path="/Home" element={<HomePage/>} />
-        <Route path="/products" element={<ProductListingPage/>}/>
+        <Route path="/" element={<HomePage/>} />
+        <Route path="/HomePage" element={<HomePage/>} />
+        <Route path="/ProductListing" element={<ProductListingPage/>}/>
     </>
 
 ));

@@ -8,7 +8,7 @@ import React from "react";
             <nav className="" >
                 <ul className="flex justify-around">
                     <li className="px-4	">
-                    <a className="no-underline hover:font-bold hover:text-rose-500 hover:underline" href="#">Home</a>
+                    <a className="no-underline hover:font-bold hover:text-rose-500 hover:underline" href="HomePage">Home</a>
                     </li>
 
                     <li className="px-4	" >
