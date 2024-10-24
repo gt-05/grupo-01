@@ -6,7 +6,7 @@ function FilterBy (){
     return(
         
         <div className="h-[80%] w-60  top-[275px] left-[60px] absolute bg-white rounded border drop-shadow-[6px_16px_30px_#6962620D]">
-            <span className="font-bold text-lg ml-6">Filtrar por: <br /></span> 
+            <span className="font-bold text-lg ml-6 relative top-2">Filtrar por: <br /></span> 
             <div className="border-t border-gray-300 my-4 ml-6 w-[80%]">  </div>
             <div className="ml-6 my-3.5">
                 <h3 className="font-bold">Marka</h3>
