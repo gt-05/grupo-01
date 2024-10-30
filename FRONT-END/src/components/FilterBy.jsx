@@ -14,7 +14,7 @@ function FilterBy (){
                 <label> Abididas </label>
                 <br />
                 <input type="checkbox" />
-                <label> Naike </label>
+                <label> Naique </label>
                 <br />
                 <input type="checkbox" />
                 <label> Pamu </label>
