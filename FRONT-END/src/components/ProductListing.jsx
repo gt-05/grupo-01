@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ProductCard from "./ProductCard";
+import Section from "./Section";
 
 function ProductListing(props) {
 
@@ -20,15 +21,16 @@ function ProductListing(props) {
     }, [props.SelectedOption]);
 
     return (
-        <section className="flex gap-[24px] justify-center flex-wrap ">
-           {products.map(product => {
+        <Section className="flex">
+            {props.children}
+            {products.map(product => {
                 return <ProductCard
                     image={product.images[0]}  
                     name={product.name} 
                     price={product.price} 
                     priceDiscount={product.price_with_discount} />
            })}
-        </section>
+        </Section>
     );
 }
 

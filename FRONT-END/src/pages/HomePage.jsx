@@ -10,7 +10,6 @@ function App () {
     return(
         <>
         <Layout>
-            <Header/>
             <Gallery/>
             <CardSale/>
             <Section 
@@ -21,10 +20,10 @@ function App () {
                     "href": "http://redirect.link"
                 }
             }>
-            <ProductListing/>
+            
+            <ProductListing/> [3]
             </Section>
             <ProductOffer/>
-            <Footer/>
         </Layout>
         </>
     )

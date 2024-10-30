@@ -14,7 +14,7 @@ function ProductListingPage(){
     return(
         <>
             <Layout>
-                <Header/>
+                
                 <Section>
                 <div className="border-current h-11 w-[320px] flex relative left-[70%] top-[20px] bg-white rounded border drop-shadow-[6px_16px_30px_#6962620D]">
                     <span className="font-bold p-2 ml-2.5 tracking-wide"> Ordenar por: </span>
@@ -25,11 +25,11 @@ function ProductListingPage(){
                 </select>
                 </div>
                 </Section>
+                <div className='flex m-auto mt-10'>
                 <FilterBy/>
-                <div className=' w-[1000px] left-[25%] relative'>
-                <ProductListing/>
+                <ProductListing />
                 </div>
-                <Footer/>
+            
             </Layout>
         
         </>

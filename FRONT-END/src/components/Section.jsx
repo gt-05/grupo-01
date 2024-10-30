@@ -18,8 +18,9 @@ export default function Section(props){
                 </div>
             )}
         </div>
-
+        <div className="max-w-[1150px] flex flex-wrap gap-2.5 m-auto">
         {props.children}
+        </div>
         </>
     )
 

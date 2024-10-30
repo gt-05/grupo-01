@@ -5,7 +5,7 @@ function FilterBy (){
     
     return(
         
-        <div className="h-[80%] w-60  top-[275px] left-[60px] absolute bg-white rounded border drop-shadow-[6px_16px_30px_#6962620D]">
+        <div className="h-[480px] py-[10px] w-[600px] bg-white rounded border drop-shadow-[6px_16px_30px_#6962620D]">
             <span className="font-bold text-lg ml-6">Filtrar por: <br /></span> 
             <div className="border-t border-gray-300 my-4 ml-6 w-[80%]">  </div>
             <div className="ml-6 my-3.5">
