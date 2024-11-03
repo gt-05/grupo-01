@@ -7,10 +7,10 @@ function ProductListing(props) {
     let [products, setProducts] = useState([]);
 
     useEffect(function() {
-        fetch("https://raw.githubusercontent.com/gt-05/.github/refs/heads/main/db.json")
+        fetch("http://localhost:3000/products")
         .then(response => response.json())
         .then(body => {
-            let productsResponse = body.products.sort(function (current, next) {
+            let productsResponse = body.sort(function (current, next) {
                 return current.price - next.price
             });
             if(props.SelectedOption === 'maior') {
@@ -25,10 +25,10 @@ function ProductListing(props) {
             {props.children}
             {products.map(product => {
                 return <ProductCard
-                    image={product.images[0]}  
+                    image={product.images[0].url}  
                     name={product.name} 
-                    price={product.price} 
-                    priceDiscount={product.price_with_discount} />
+                    priceDiscount={product.price_with_discount}
+                    slug={product.slug} />
            })}
         </Section>
     );
