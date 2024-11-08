@@ -1,14 +1,16 @@
 
+import ProductOptions from '../components/ProductOptions';
 import ProductListing from '../components/ProductListing';
-import Gallery from '../components/Gallery';
+
 import Layout from '../components/Layout'
 
-function ProductPage(){
+function ProductViewPage(){
     return(
         <>
 
             <Layout>
-                <Gallery/>
+                
+                <ProductOptions/>
                 
                 <ProductListing/>
 
@@ -22,4 +24,4 @@ function ProductPage(){
 
 }
 
-export default ProductPage;
+export default ProductViewPage;

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 export default function ProductCard(props){
   return (
     <>
-      <NavLink to="/ProductPage" className={({isActive}) => isActive}>
+      <NavLink to="/ProductViewPage" className={({isActive}) => isActive}>
       
         <div className="bg-white-300 flex flex-col">
           <div className="w-[280px] bg-[#F9F8FE] rounded border drop-shadow-[6px_16px_30px_#6962620D]">
