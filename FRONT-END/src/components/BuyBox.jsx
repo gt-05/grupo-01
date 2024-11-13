@@ -7,16 +7,10 @@ function BuyBox(props){
 
     return(
         <>
-            <ProductOptions
-                options = {
-                    ["39", "40", "41", "42", "43" ]
-                }
-                shape = "square"
-                type = "text"
-            />
+           
             <div className="flex flex-col gap-4">
                 <h1 className="text-[#1F1F1F] w-[440px] h-[72px] top-[274px] left-[841px] font-bold text-[32px] leading-[36px] tracking-[1px]">{props.name}</h1>
-                <p className="text-[#666666] w-[425px] h-[21px] top-[356px] left-[841px] font-inter text-sm font-medium leading-5 tracking-wide text-left">{props.description}Casual | Nike | REF:38416711</p>
+                <p className="text-[#666666] w-[425px] h-[21px] top-[356px] left-[841px] font-inter text-sm font-medium leading-5 tracking-wide text-left">{props.reference}</p>
                 <div className="flex">
                     <img className="w-[24px] h-[20px] top-[391px] left-[841px]" src={star1} alt=""/>
                     <img className="w-[24px] h-[20px] top-[391px] left-[841px]" src={star1} alt=""/>
@@ -37,9 +31,18 @@ function BuyBox(props){
                 </div>
                 
                 <p className="text-[#8F8F8F] w-[162px] h-[22px] top-[488px] left-[841px] font-inter text-xs font-bold leading-[22px] tracking-[0.75px] text-left">Descrição do produto</p>
-                <p className="text-wrap">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla.</p>
+                <p className="text-wrap">{props.description}</p>
             </div>
-        
+
+            <ProductOptions
+                options = {
+                    ["39", "40", "41", "42", "43" ]
+                }
+                shape = "square"
+                type = "text"
+            />
+
+         
         
         </>
 

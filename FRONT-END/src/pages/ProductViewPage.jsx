@@ -20,8 +20,6 @@ function ProductViewPage(props){
                     description = "Descrição do produto, descrição do produto, descrição do produto, descrição do produto">
                     
                 
-                    <ProductOptions/>
-
                 </BuyBox>
 
 
