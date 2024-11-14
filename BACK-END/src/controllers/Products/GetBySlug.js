@@ -22,8 +22,6 @@ module.exports = async (request, response) => {
             }]
         });
         response.status(200);
-
-        console.log(products)
         return response.json(products);
     } catch (error) {
         response.status(400)

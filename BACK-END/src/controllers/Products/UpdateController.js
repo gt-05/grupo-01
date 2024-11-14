@@ -8,7 +8,7 @@ module.exports = async (request, response) => {
                 id: request.params.id
             }
         });
-        response.status(204) 
+        response.status(200) 
         return response.json({
             message: "Produto atualizado com sucesso!"
         });
