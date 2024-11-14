@@ -2,16 +2,15 @@ const ProductModel = require('../models/ProductModel');
 const ProductImageModel = require('../models/ProductImageModel');
 const CategoryModel = require('../models/CategoryModel');
 const ProductCategoryModel = require('../models/ProductCategoryModel');
-const ProductOptionsModel =require('../models/ProductOptionsModel');
-const UsersModel = require('../models/UsersModel')
-
+const UserModel = require('../models/UserModel');
+const ProductOptionsModel = require('../models/ProductOptionsModel')
 async function execute() {
+    await UserModel.sync();
     await ProductModel.sync();
-    await ProductImageModel.sync();
+    await ProductImageModel.sync({alter: true});
     await CategoryModel.sync();
-    await ProductCategoryModel.sync();
+    await ProductCategoryModel.sync({alter: true});
     await ProductOptionsModel.sync();
-    await UsersModel.sync();
 }
 
 execute();
