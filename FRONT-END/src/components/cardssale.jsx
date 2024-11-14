@@ -7,7 +7,7 @@ import collection3 from '../assets/collection3.png'
 export default function CardSale() {
     return (
         <>
-            <section className=" my-10  text-center bg-slate-100">
+            <section className=" my-10 text-center bg-slate-100">
 
                 <div className="px-[300px] pt-[15px]">
                     <div className="">
