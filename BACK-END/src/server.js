@@ -1,18 +1,22 @@
-const dotenv = require('dotenv');
+const dotenv = require('dotenv')
 dotenv.config();
-const express = require('express');
+require('./database/associations');
+
+const express = require("express");
 const cors = require('cors')
+const imagePlaceholder = require('./midleware/image-placeholder');
 const app = express();
+
 app.use(cors());
 app.use(express.json());
-app.use ('/public', express.static('public'));
 
-const userRoutes = require('./routes/User-routes');
-const productsRoutes = require('./routes/Products-routes')
+const userRoutes = require('./routes/user-routes')
+const productsRoutes = require('./routes/product-routes')
+app.use('/public', imagePlaceholder, express.static('public'));
 
-app.use(productsRoutes)
 app.use(userRoutes)
+app.use(productsRoutes)
 
-app.listen(3000, () => {
-    console.log("Servidor web inicializando em http://localhost:3000")
+app.listen(3000,()=>{
+    console.log("Servidor web inicializado em http://localhost:3000");
 });
