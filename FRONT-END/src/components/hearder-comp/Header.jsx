@@ -9,7 +9,7 @@ import HeaderNav from './HeaderNav';
  function Header(){
     return (
         < >
-        <div className="flex w-full h-48 border-solid border-inherit border-2 bg-white">
+        <div className="flex w-full h-48 bg-white">
             <HeaderLogo/>
             <HeaderSearch/>
             <HeaderDir/>

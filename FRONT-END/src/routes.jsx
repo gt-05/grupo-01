@@ -6,11 +6,14 @@ import {
 
 import HomePage from "./pages/HomePage";
 import ProductListingPage from "./pages/ProductListingPage";
+import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage"
 export default createBrowserRouter(createRoutesFromElements(
     <>
         <Route path="/" element={<HomePage/>} />
-        <Route path="/HomePage" element={<HomePage/>} />
         <Route path="/ProductListing" element={<ProductListingPage/>}/>
+        <Route path="/LoginPage" element={<LoginPage/>}/>
+        <Route path="/RegisterPage" element={<RegisterPage/>}/>
     </>
 
 ));

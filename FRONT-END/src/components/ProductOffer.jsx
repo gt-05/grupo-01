@@ -2,10 +2,10 @@ import ButtonOffer from "./ButtonOffer";
 
 export default function ProductOffer() {
     return (
-        <div className="Container w-full h-[553px] pt-[106px] flex ">
+        <div className="h-[570px] pt-[100px] flex">
 
             <div>
-                <img src="../src/assets/imageOffer.png" alt="" className="absolute z-10 ml-[52px] pt-[28px]  " />
+                <img src="../src/assets/imageOffer.png" alt="" className="absolute z-10 ml-[52px]" />
                 <div className="relative rounded-full ml-[129px] bg-gradient-to-b from-[#4200FF]/10 to-[#fff] w-[466px] h-[466px]"></div>
             </div>
 

@@ -1,10 +1,8 @@
 import Gallery from "../components/Gallery"
 import Layout from "../components/Layout"
-import Footer from "../components/Footer"
 import ProductListing from "../components/ProductListing"
 import Section from "../components/Section"
 import CardSale from "../components/cardssale"
-import Header from "../components/hearder-comp/Header"
 import ProductOffer from "../components/ProductOffer"
 function App () {
     return(
@@ -17,11 +15,10 @@ function App () {
             link = {
                 {
                     "text": "Ver todos",
-                    "href": "http://redirect.link"
+                    "href": "http://localhost:5173/ProductListing"
                 }
             }>
-            
-            <ProductListing/> [3]
+            <ProductListing/>
             </Section>
             <ProductOffer/>
         </Layout>

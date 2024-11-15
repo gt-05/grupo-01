@@ -2,7 +2,7 @@ import Footer from "./Footer";
 import Header from "./hearder-comp/Header";
 
 
-export default function Layout (props){
+ function Layout (props){
     return (
       <>
             <Header/>
@@ -13,3 +13,5 @@ export default function Layout (props){
       </>
     )
 }
+
+export default Layout;
