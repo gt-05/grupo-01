@@ -18,10 +18,7 @@ function App () {
                     "href": "http://localhost:5173/ProductListing"
                 }
             }>
-<<<<<<< HEAD
-            
-=======
->>>>>>> main
+
             <ProductListing/>
             </Section>
             <ProductOffer/>
