@@ -1,40 +1,44 @@
-const connection =require('../database/connection');
-const { DataTypes } = require('sequelize')
+const { DataTypes } = require('sequelize');
+const connection = require('../database/connection');
 
-const ProductOptionsModel = connection.define("ProductOptionsModel", {
-    product_id: {
-        type: DataTypes.INTEGER,
-        references: {
-            model: {
-                tableName: "product"
-            },
-            key: 'id'
-        }
-    },
-        title: {
-            type: DataTypes.STRING(45),
-            allowNull: false
+const ProductOptions = connection.define("ProductOptions",
+    {   
+        product_id:{
+            type:DataTypes.INTEGER,
+            allowNull:false,
+            references:{
+                model:{
+                    tableName:"product"
+                },
+                key:'id'
+            }
+        },
+        title:{
+            type: DataTypes.STRING(20),
+            allowNull:false,
         },
         shape: {
-            type: DataTypes.ENUM("square", "circle"),
-            allowNull: false,
-            defaultValue: "square"
+            type: DataTypes.ENUM('value', 'square','circle'),
+            defaultValue: 'square',
+            allowNull:false
         },
-        raidius: {
-            type: DataTypes.INTEGER.UNSIGNED,
-            allowNull: false,
+        radius: {
+            type: DataTypes.INTEGER,
+            allowNull:false,
             defaultValue: 0
         },
         type: {
-            type: DataTypes.ENUM("text", "color"),
-            defaultValue: "text",
-            allowNull: false
+            type: DataTypes.ENUM(['value', 'text', 'color']),
+            allowNull:false,
+            defaultValue: 'text'
         },
-        values: {
+        values:{
             type: DataTypes.STRING(255),
-            allowNull: false
+            allowNull:false
         }
-
-},{})
-
-module.exports = ProductOptionsModel;
+    },
+    {
+        tableName: 'product_options'
+    }
+)
+module.exports = ProductOptions;

@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
  function HeaderNav(){
     return (
     
-        <div className="flex w-fit h-7  pt-32 absolute left-20">
+        <div className="flex pt-32 absolute left-20">
             <nav className="" >
                 <ul className="flex justify-around">
                     <li className="px-4">

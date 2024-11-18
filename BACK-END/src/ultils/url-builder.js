@@ -1,5 +1,5 @@
 const getBaseUrl = (path) => {
-    return `${process.env.APP_SCHEMA}://${process.env.APP_HOSTNAME}:${process.env.APP_PORT}`;
+    return `${process.env.APP_SCHEMA}://${process.env.APP_HOSTNAME}:${process.env.APP_POST}/${path}`;
 }
 
 const getPublicUrl = (path) => {

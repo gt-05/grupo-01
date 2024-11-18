@@ -15,10 +15,13 @@ function App () {
             link = {
                 {
                     "text": "Ver todos",
-                    "href": "http://redirect.link"
+                    "href": "http://localhost:5173/ProductListing"
                 }
             }>
+<<<<<<< HEAD
             
+=======
+>>>>>>> main
             <ProductListing/>
             </Section>
             <ProductOffer/>

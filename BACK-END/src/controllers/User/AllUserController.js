@@ -1,6 +1,6 @@
-const UsersModel = require('../../models/UsersModel')
+const UserModel = require("../../models/UserModel")
 
 module.exports = async (request, response) => {
-    let users = await UsersModel.findAll();
-    return response.json(users);
+    let user = await UserModel.findAll();
+    return response.json(user);
 }

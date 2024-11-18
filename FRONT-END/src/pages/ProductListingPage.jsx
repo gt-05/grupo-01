@@ -1,7 +1,5 @@
 import FilterBy from '../components/FilterBy'
-import Header from '../components/hearder-comp/Header'
 import ProductListing from '../components/ProductListing'
-import Footer from '../components/Footer'
 import Section from '../components/Section'
 import { useState } from 'react'
 import Layout from '../components/Layout'
