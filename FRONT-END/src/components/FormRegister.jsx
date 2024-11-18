@@ -14,9 +14,9 @@ import { NavLink } from "react-router-dom";
                         <label className="font-bold text-slate-700">Nome*</label>
                         <input type="text" className=" w-[300px] h-[35px] rounded-[9px]" placeholder="Insira seu nome"/>
                         <label className="font-bold text-slate-700">Sobrenome*</label>
-                        <input type="password" className="border w-[300px] h-[35px] rounded" placeholder="Insira seu sobrenome"/>
+                        <input type="taxt" className="border w-[300px] h-[35px] rounded" placeholder="Insira seu sobrenome"/>
                         <label className="font-bold text-slate-700">Email*</label>
-                        <input type="password" className="border w-[300px] h-[35px] rounded" placeholder="Insira seu email"/>
+                        <input type="email" className="border w-[300px] h-[35px] rounded" placeholder="Insira seu email"/>
                         <label className="font-bold text-slate-700">Password*</label>
                         <input type="password" className="border w-[300px] h-[35px] rounded" placeholder="Insira sua senha"/>
                         
