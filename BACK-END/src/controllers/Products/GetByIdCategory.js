@@ -7,6 +7,7 @@ module.exports = async (request, response) => {
                 id: request.params.id
             }
         });
+        response.status(200)
         return response.json(categoryId)
     } catch (error) {
         response.status(400)

@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require("path");
 const ProductModel = require("../../models/ProductModel");
 const {saveByUrl} = require('../../services/product-images');
-const ProductImageModel = require('../../models/ProductImageModel')
+const ProductImageModel = require('../../models/ProductImageModel');
 
 module.exports = async (request, response) => {
     let {

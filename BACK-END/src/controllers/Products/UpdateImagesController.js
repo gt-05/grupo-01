@@ -9,9 +9,7 @@ module.exports = async (request, response)=>{
         product = await ProductModel.findOne({
             where:{id}
         });
-    
         let image = await saveByUrl({url:request.body.url, slug: product.slug});
-    
         await ProductImageModel.update({
             path: image.relativePath
         }, {
@@ -20,7 +18,7 @@ module.exports = async (request, response)=>{
                 id: imageId
             }
         });
-        response.status(204)
+        response.status(200)
         return response.json({
             message: "Imagem atualizada com sucesso" 
         });
