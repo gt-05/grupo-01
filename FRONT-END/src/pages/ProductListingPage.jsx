@@ -3,11 +3,16 @@ import ProductListing from '../components/ProductListing'
 import Section from '../components/Section'
 import { useState } from 'react'
 import Layout from '../components/Layout'
+import { useParams  } from 'react-router-dom'
 
 
 function ProductListingPage(){
 
     const [SelectedOption, setSelectedOption] = useState('');
+
+    let params = useParams();
+    fetch(`http://localhost:3000/products`)  
+
 
     return(
         <>

@@ -7,7 +7,7 @@ function ProductListing(props) {
     let [products, setProducts] = useState([]);
 
     useEffect(function() {
-        fetch("https://raw.githubusercontent.com/gt-05/.github/refs/heads/main/db.json")
+        fetch("http://localhost:3000/products")
         .then(response => response.json())
         .then(body => {
             let productsResponse = body.products.sort(function (current, next) {
