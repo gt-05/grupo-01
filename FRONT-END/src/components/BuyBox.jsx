@@ -26,7 +26,7 @@ function BuyBox(props){
                 <p className="text-[#8F8F8F] w-[111px] h-[16px] absolute top-[390px] left-[1020px] font-inter text-[14px] font-medium leading-[22px] tracking-[0.25px] text-left ml-6">({props.rating})</p>
                 
                     
-                <p className=" flex text-[#1F1F1F] w-[89px] h-[36px] absolute top-[430px] left-[870px] font-inter text-2xl font-bold leading-9 tracking-[1px]">R$219,00</p>
+                <p className=" flex text-[#1F1F1F] w-[89px] h-[36px] absolute top-[430px] left-[842px] font-inter text-2xl font-bold leading-9 tracking-[1px]">R$219,00</p>
                 <p className=" flex w-[55px] h-[28px] line-through absolute top-[440px] left-[969px] text-[#CCCCCC]">R$219,00</p>
                 
                 

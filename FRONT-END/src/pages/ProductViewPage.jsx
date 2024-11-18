@@ -22,18 +22,20 @@ function ProductViewPage(props){
                     description = "Descrição do produto, descrição do produto, descrição do produto, descrição do produto, Descrição do produto, descrição do produto, descrição do produto, descrição do produto, Descrição do produto, descrição do produto, descrição do produto, descrição do produto">
                     
                 </BuyBox>
-                <Section
-                title="Produtos em alta" textAlign="center"
-                link = {
-                {
-                    "text": "Ver todos",
-                    "href": "http://redirect.link"
-                }
-                }>
+                <div className="mt-[850px]">
+                    <Section
+                    title="Produtos em alta" textAlign="center"
+                    link = {
+                    {
+                        "text": "Ver todos",
+                        "href": "http://redirect.link"
+                    }
 
-                </Section>
-                
-
+                    }>
+                        <ProductListing/>
+                    </Section>
+                    
+                </div>
                 
 
                 
