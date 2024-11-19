@@ -21,10 +21,11 @@ function ProductListing(props) {
     }, [props.SelectedOption]);
 
     return (
-        <Section className="flex">
+        <Section>
             {props.children}
             {products.map(product => {
                 return <ProductCard
+                    key={product.id}
                     image={product.images[0]}  
                     name={product.name} 
                     price={product.price} 

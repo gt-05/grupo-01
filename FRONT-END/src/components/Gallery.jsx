@@ -29,9 +29,10 @@ export default function Gallery() {
 		}
 	}
 
-	let tagsImg = imgs.map(function (img) {
+	let tagsImg = imgs.map(function (img, index) {
+		
 		return (
-			<div class="slide min-w-full">
+			<div className="slide min-w-full" key={index}>
 
                     <div className="absolute z-10 w-[510px] h-[318px] m-[100px] mt-[124px]">
                         <span className="text-[16px] text-[#F6AA1C] font-bold">Melhores ofertas personalizadas</span>
@@ -39,9 +40,9 @@ export default function Gallery() {
                         <p className="text-[18px] text-[#474747] font-normal">Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</p>
 						<ButtonOffer/>
                     </div>
-                <img src='/src/assets/detalheSlide.png' class=" absolute z-10 ml-[1263px] mt-[78px]"/>
-                <img src={itemGalelly} class="absolute z-10 ml-[564.02px] origin-bottom -rotate-[19.34deg] hover:rotate-[25deg] duration-500 " />
-				<img class="w-full h-full relative " src={img.src} />
+                <img src='/src/assets/detalheSlide.png' className=" absolute z-10 ml-[1263px] mt-[78px]"/>
+                <img src={itemGalelly} className="absolute z-10 ml-[564.02px] origin-bottom -rotate-[19.34deg] hover:rotate-[25deg] duration-500 " />
+				<img className="w-full h-full relative "  src={img.src} />
 			</div>
 		)
 	});
@@ -50,9 +51,8 @@ export default function Gallery() {
 	return (
 		<div className="gallery max-w-full max-h-[681px] m-auto">
 			<div className="slider relative overflow-hidden">
-				<div 
-					className="slides flex ease-in-out duration-500"
-					style={css}>
+				
+				<div className="slides flex ease-in-out duration-500"style={css}>
 					{tagsImg}
 				</div>
 				<span 
