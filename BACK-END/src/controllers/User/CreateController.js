@@ -9,7 +9,7 @@ module.exports = async (request, response) => {
     } catch (error) {
     response.status(400)
     return response.json({
-        message: "Erro ao deletar usuario"
+        message: "Erro ao criar usuario"
     });
     }
 }

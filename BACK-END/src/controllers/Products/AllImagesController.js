@@ -9,7 +9,6 @@ module.exports = async (request, response) => {
                 product_id: request.params.id
             }
         });
-        console.log(images)
         
         return response.json(images);
 

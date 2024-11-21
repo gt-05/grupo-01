@@ -43,7 +43,6 @@ module.exports = async (request, response) => {
         message:"produto criado com sucesso!",
         product});
 }catch(error){
-    console.log(error.message);
      response.status(200)
         return response.json({
             message: "Produto criado sem imagens"
