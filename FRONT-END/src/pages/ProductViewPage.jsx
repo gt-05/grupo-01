@@ -2,6 +2,7 @@ import Layout from '../components/Layout'
 import BuyBox from '../components/BuyBox';
 import Section from '../components/Section';
 import ProductListing from '../components/ProductListing';
+import Gallery from '../components/Gallery';
 import GalleryProductView from '../components/GalleryProductView';
 
 
@@ -10,15 +11,26 @@ function ProductViewPage(props){
     return(
         <>
 
-          
-
             <Layout>
-
                 
-                <GalleryProductView/>
+                <Gallery
+                    showThumbs= ""
+                    images = {
+                        {
+                        "src": "public/product-image-1.png",
+                        "src": "public/product-image-2.png",
+                        "src": "public/product-image-3.png",
+                        "src": "public/product-image-4.png"
+
+                        }
+                    }
+                    width= "700px"
+                    height= "570px"
+                    radius= "4px"
+                                   
+                    
+                />
             
-                
-
                 <BuyBox
                     name = "Tênis Nike Revolution 6 Next Nature Masculino"
                     reference = "Casual | Nike | REF:38416711"

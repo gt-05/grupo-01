@@ -8,7 +8,16 @@ function App () {
     return(
         <>
         <Layout>
-            <Gallery/>
+            <Gallery
+                width= "1350px"
+                images= {
+                    {"src": "/src/assets/gallery.png"},
+                    {"src": "/src/assets/gallery.png"},
+                    {"src": "/src/assets/gallery.png"},
+                    {"src": "/src/assets/gallery.png"}
+
+                }
+            />
             <CardSale/>
             <Section 
             title="Produtos em alta" textAlign="center"

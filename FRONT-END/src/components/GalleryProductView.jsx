@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function GalleryProductView(){
+function GalleryProductView(props){
 
     const [current, setCurrent] = useState(0);
 
@@ -9,10 +9,10 @@ function GalleryProductView(){
     };
 
     let imgs = [
-        {"src": "/src/assets/sapato-nike.png" },
-        {"src": "/src/assets/sapato-nike.png"},
-        {"src": "/src/assets/sapato-nike.png"},
-        {"src": "/src/assets/sapato-nike.png"}
+        props.images[0],
+        props.images[1],
+        props.images[2],
+        props.images[3]
     ];
 
     function handlerSlide(direction){
@@ -36,11 +36,7 @@ function GalleryProductView(){
         ) 
     });
 
-    function changeImg(){
-        imgs
-    }
-
-
+   
     return(
         <>
             <div className="max-w-[780px] h-[20px]">
@@ -62,7 +58,7 @@ function GalleryProductView(){
             </div>
 
             <div className="flex gap-5 absolute top-[900px] ml-[45px]">
-                <button onClick={changeImg}>
+                <button>
                     <div className=" w-[130px] h-[90px] bg-red-200 rounded flex items-center justify-center">
                         
                         <img className=" w-[120px]" src="/src/assets/sapato-nike.png"/>
@@ -93,10 +89,6 @@ function GalleryProductView(){
 
                     </div>
                 </button>
-
-
-
-
 
             </div>
         
