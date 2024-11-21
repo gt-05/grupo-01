@@ -21,16 +21,18 @@ function ProductListing(props) {
     }, [props.SelectedOption]);
 
     return (
-        <Section className="flex">
-            {props.children}
-            {products.map(product => {
-                return <ProductCard
-                    image={product.images[0]}  
-                    name={product.name} 
-                    price={product.price} 
-                    priceDiscount={product.price_with_discount} />
-           })}
-        </Section>
+        <div>
+            <Section>
+                {props.children}
+                {products.map(product => {
+                    return <ProductCard
+                        image={product.images[0]}  
+                        name={product.name} 
+                        price={product.price} 
+                        priceDiscount={product.price_with_discount} />
+            })}
+            </Section>
+        </div>
     );
 }
 

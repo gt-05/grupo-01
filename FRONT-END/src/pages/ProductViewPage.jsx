@@ -3,7 +3,7 @@ import BuyBox from '../components/BuyBox';
 import Section from '../components/Section';
 import ProductListing from '../components/ProductListing';
 import Gallery from '../components/Gallery';
-import GalleryProductView from '../components/GalleryProductView';
+
 
 
 
@@ -25,15 +25,20 @@ function ProductViewPage(props){
                         ]
                     }
                     
-                    width= "max-w-[780px]"
-                    height= "h-[200px]"
+                    width= "680px"
+                    height= "600px"
                     radius= "4px"
                     display= "hidden"
-                    ml= "130px"
+                    mlimage= "80px"
                     mtimage= "80px"
                     mtslide= "100px"
-                    bgimagem= "blue-200"              
-                    
+                    bgimagem= "blue-200"
+                    rotate= ""
+                    displayThumbs= ""
+                    mlproductslide= "55px"
+                    mtproductslide= "55px"              
+                    hslide= "20px"
+                    wslide= "780px"
                 />
             
                 <BuyBox
@@ -56,7 +61,7 @@ function ProductViewPage(props){
                     }
 
                     }>
-                        <ProductListing/>
+                    <ProductListing/>
                     </Section>
                     
                 </div>

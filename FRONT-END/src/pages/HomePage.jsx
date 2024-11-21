@@ -12,7 +12,7 @@ function App () {
         <>
         <Layout>
             <Gallery
-                width= "1350px"
+                showThumbs= ""
                 images= {
                     [
                     {"src": "../src/assets/sapato-nike.png"},
@@ -23,12 +23,20 @@ function App () {
 
                 ]
                 }
-                display= "block"
-                ml= "700px"
+                width= "1350px"
+                height= ""
+                radius= ""
+                display= ""
+                mlimage= "700px"
                 mtimage="150px"
+                mtslide= ""
                 rotate='origin-bottom -rotate-[19.34deg] hover:rotate-[25deg] duration-500'
                 bgimagem= ""
-
+                displayThumbs= "hidden"
+                mlproductsslide= ""
+                mtproductsslide= ""
+                hslide= ""
+                wslide= ""
 
                 
             />

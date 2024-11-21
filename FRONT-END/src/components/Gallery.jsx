@@ -3,8 +3,7 @@ import ButtonOffer from './ButtonOffer';
 
 
 export default function Gallery(props) {
-
-
+	
 	const [current, setCurrent] = useState(0);
 
 	let css = {
@@ -13,17 +12,12 @@ export default function Gallery(props) {
 
 
 	let imgs = [
+		{"src": `${props.images}`},
+		{"src": `${props.images}`},
+		{"src": `${props.images}`},
 		{"src": `${props.images}`}
 	]
 
-
-	let pushImg = props.images.map(function (img) {
-		imgs.push(img)
-	})
-	
-	
-
-	console.log(imgs);
 
 	function handlerSlide(direction) {
 		
@@ -38,7 +32,9 @@ export default function Gallery(props) {
 		}
 	};
 
-	let tagsImg = imgs.map(function (img) {
+
+
+	let tagsImg = imgs.map(function (){
 		return (
 			<div className={`slide min-w-full mt-[${props.mtslide}]`}>
 
@@ -51,20 +47,21 @@ export default function Gallery(props) {
 					</div>
 				</div>
 				<img src='/src/assets/detalheSlide.png' className={`absolute z-10 ml-[1200px] mt-[78px] ${props.display}`} />
-				<img src='/src/assets/sapato-nike.png' className={`absolute z-10 ml-[${props.ml}] mt-[${props.mtimage}] ${props.rotate}`}/>
-				<img className="w-full h-full relative" src="/src/assets/gallery.png" />
+				<img src='/src/assets/sapato-nike.png' className={`absolute z-10 ml-[${props.mlimage}] mt-[${props.mtimage}] ${props.rotate}`}/>
+				<img className={`w-full h-full relative ${props.display}`} src="/src/assets/gallery.png" />
 			</div>
 
 
 
 		)
-});
+	});
 
 
 	return (
 		<>
-		<div className={`w-[${props.width}] h-[${props.height}] `}>
-			<div className={`slider relative overflow-hidden  bg-${props.bgimagem}`} >
+		<div className={`max-w-[${props.wslide}] h-[${props.hslide}]`}>
+			
+			<div className={`slider relative overflow-hidden mt-[${props.mtproductslide}] ml-[${props.mlproductslide}] w-[${props.width}] h-[${props.height}] bg-${props.bgimagem}`} >
 				<div 
 					className="slides flex ease-in-out duration-500"
 					style={css}>
@@ -83,44 +80,37 @@ export default function Gallery(props) {
 					<img src="/src/assets/icon/next.svg" />
 				</span>
 			</div>
+
 		</div>
+		
 
 
-
-
-		<div className="flex gap-5 absolute top-[900px] ml-[45px]">
-		<button>
-			<div className=" w-[130px] h-[90px] bg-red-200 rounded flex items-center justify-center">
-				
-				<img className=" w-[120px]" src="/src/assets/sapato-nike.png"/>
-
-			</div>
-		</button>
-		<button>
-			<div  className=" w-[130px] h-[90px] bg-green-400 rounded flex items-center justify-center">
-				<img className=" w-[120px]" src="/src/assets/sapato-nike.png"/>
-
-			</div>
-		</button>
-		<button>
-			<div className=" w-[130px] h-[90px] bg-gray-300 rounded flex items-center justify-center">
-				<img className=" w-[120px]" src="/src/assets/sapato-nike.png"/>
-
-			</div>
-		</button>
-		<button>
-			<div  className=" w-[130px] h-[90px] bg-yellow-200 rounded flex items-center justify-center">
-				<img className=" w-[120px]" src="/src/assets/sapato-nike.png"/>
-
-			</div>
-		</button>
-		<button>
-			<div className=" w-[130px] h-[90px] bg-[#C95060] rounded flex items-center justify-center">
-				<img className=" w-[120px]" src="/src/assets/sapato-nike.png"/>
-
-			</div>
-		</button>
-
+		<div className={`flex gap-8 absolute top-[865px] ml-[55px] ${props.displayThumbs}`}>
+			<button>
+				<div className=" w-[110px] h-[80px] bg-red-200 rounded flex items-center justify-center">
+					<img className=" w-[95px] " src="/src/assets/sapato-nike.png"/>
+				</div>
+			</button>
+			<button>
+				<div  className=" w-[110px] h-[80px] bg-green-400 rounded flex items-center justify-center">
+					<img className="  w-[95px] " src="/src/assets/sapato-nike.png"/>
+				</div>
+			</button>
+			<button>
+				<div className="w-[110px] h-[80px] bg-gray-300 rounded flex items-center justify-center">
+					<img className="  w-[95px] " src="/src/assets/sapato-nike.png"/>
+				</div>
+			</button>
+			<button>
+				<div  className=" w-[110px] h-[80px] bg-yellow-200 rounded flex items-center justify-center">
+					<img className="  w-[95px] " src="/src/assets/sapato-nike.png"/>
+				</div>
+			</button>
+			<button>
+				<div className=" w-[110px] h-[80px] bg-[#C95060] rounded flex items-center justify-center">
+					<img className="  w-[95px] " src="/src/assets/sapato-nike.png"/>
+				</div>
+			</button>
 		</div>
 
 		</>
