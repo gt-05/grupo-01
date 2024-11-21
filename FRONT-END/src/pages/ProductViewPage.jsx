@@ -16,18 +16,23 @@ function ProductViewPage(props){
                 <Gallery
                     showThumbs= ""
                     images = {
-                        {
-                        "src": "public/product-image-1.png",
-                        "src": "public/product-image-2.png",
-                        "src": "public/product-image-3.png",
-                        "src": "public/product-image-4.png"
-
-                        }
+                        [
+                        {"src": "../src/assets/sapato-nike.png"},
+                        {"src": "../src/assets/sapato-nike.png"},
+                        {"src": "../src/assets/sapato-nike.png"},
+                        {"src": "../src/assets/sapato-nike.png"}
+                        
+                        ]
                     }
-                    width= "700px"
-                    height= "570px"
+                    
+                    width= "max-w-[780px]"
+                    height= "h-[200px]"
                     radius= "4px"
-                                   
+                    display= "hidden"
+                    ml= "130px"
+                    mtimage= "80px"
+                    mtslide= "100px"
+                    bgimagem= "blue-200"              
                     
                 />
             

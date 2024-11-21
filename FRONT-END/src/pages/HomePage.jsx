@@ -4,6 +4,9 @@ import ProductListing from "../components/ProductListing"
 import Section from "../components/Section"
 import CardSale from "../components/cardssale"
 import ProductOffer from "../components/ProductOffer"
+
+
+
 function App () {
     return(
         <>
@@ -11,12 +14,23 @@ function App () {
             <Gallery
                 width= "1350px"
                 images= {
-                    {"src": "/src/assets/gallery.png"},
-                    {"src": "/src/assets/gallery.png"},
-                    {"src": "/src/assets/gallery.png"},
-                    {"src": "/src/assets/gallery.png"}
+                    [
+                    {"src": "../src/assets/sapato-nike.png"},
+                    {"src": "../src/assets/sapato-nike.png"},
+                    {"src": "../src/assets/sapato-nike.png"}
+                    
+                    
 
+                ]
                 }
+                display= "block"
+                ml= "700px"
+                mtimage="150px"
+                rotate='origin-bottom -rotate-[19.34deg] hover:rotate-[25deg] duration-500'
+                bgimagem= ""
+
+
+                
             />
             <CardSale/>
             <Section 

@@ -39,7 +39,7 @@ function GalleryProductView(props){
    
     return(
         <>
-            <div className="max-w-[780px] h-[20px]">
+            <div className="max-w-[780px] h-[20px] ">
                 
                 <div className="relative overflow-hidden mt-[50px] ml-[45px] bg-blue-200 rounded">
                     <div className="flex ease-in-out duration-500 ml-[90px]" style={css}>
