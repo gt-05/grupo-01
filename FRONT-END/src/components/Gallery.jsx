@@ -63,8 +63,8 @@ export default function Gallery(props) {
 
 	return (
 		<>
-		<div className={`${props.width} ${props.height}`}>
-			<div className={`slider relative overflow-hidden bg-${props.bgimagem} `} >
+		<div className={`w-[${props.width}] h-[${props.height}] `}>
+			<div className={`slider relative overflow-hidden  bg-${props.bgimagem}`} >
 				<div 
 					className="slides flex ease-in-out duration-500"
 					style={css}>
