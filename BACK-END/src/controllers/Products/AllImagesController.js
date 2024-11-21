@@ -9,10 +9,10 @@ module.exports = async (request, response) => {
                 product_id: request.params.id
             }
         });
-        response.status(200)
-        return response.json({
-            message:"Lista de imagens exibida com sucesso",
-            images});
+        console.log(images)
+        
+        return response.json(images);
+
     }catch(error){
         response.status(400)
         return response.json({
