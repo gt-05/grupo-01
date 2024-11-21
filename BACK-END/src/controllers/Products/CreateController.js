@@ -44,9 +44,9 @@ module.exports = async (request, response) => {
         product});
 }catch(error){
     console.log(error.message);
-     response.status(400)
+     response.status(200)
         return response.json({
-            message: "Erro ao salvar imagens do produto: " + product.id
+            message: "Produto criado sem imagens"
         })
 }
 }
