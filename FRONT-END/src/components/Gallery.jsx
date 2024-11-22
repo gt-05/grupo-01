@@ -13,10 +13,10 @@ export default function Gallery(props) {
 
 	let imgs = [
 		{"src": "../src/assets/sapato-nike.png"},
-		{"src": "../src/assets/sapato-nike.png"},
-		{"src": "../src/assets/sapato-nike.png"},
-		{"src": "../src/assets/sapato-nike.png"},
-		{"src": "../src/assets/sapato-nike.png"}
+		{"src": "../src/assets/sapato-nike-2.png"},
+		{"src": "../src/assets/sapato-nike-3.png"},
+		{"src": "../src/assets/sapato-nike-4.png"},
+		{"src": "../src/assets/sapato-nike-5.png"}
 	]
 
 
@@ -47,11 +47,9 @@ export default function Gallery(props) {
 		);
 	});
 
-
-
-	let tagsImg = imgs.map(function (){
+	let tagsImg = imgs.map(function (img, index){
 		return (
-			<div className={`slide min-w-full mt-[${props.mtslide}]`}>
+			<div key={index} className={`slide min-w-full mt-[${props.mtslide}]`}>
 
 				<div className={`absolute z-10 w-[510px] h-[318px] m-[100px] mt-[124px]`}>
 					<span className={`text-[16px] text-[#F6AA1C] font-bold ${props.display}`}>Melhores ofertas personalizadas</span>
@@ -62,7 +60,7 @@ export default function Gallery(props) {
 					</div>
 				</div>
 				<img src='/src/assets/detalheSlide.png' className={`absolute z-10 ml-[1200px] mt-[78px] ${props.display}`} />
-				<img src='/src/assets/sapato-nike.png' className={`absolute z-10 ml-[${props.mlimage}] mt-[${props.mtimage}] ${props.rotate}`}/>
+				<img src={img.src} className={`absolute w-[${props.wimageslide}] h-[${props.himageslide}] object-cover z-10 ml-[${props.mlimage}] mt-[${props.mtimage}] ${props.rotate}`}/>
 				<img className={`w-full h-full relative ${props.display}`} src="/src/assets/gallery.png" />
 			</div>
 
