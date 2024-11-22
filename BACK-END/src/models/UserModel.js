@@ -3,11 +3,11 @@ const {DataTypes} = require('sequelize');
 
 const UserModel = connection.define("UserModel",
     {
-        firstName:{
+        firstname:{
             type: DataTypes.STRING(45),
             allowNull:false
         },
-        surName:{
+        surname:{
             type: DataTypes.STRING(45),
             allowNull:null
         },

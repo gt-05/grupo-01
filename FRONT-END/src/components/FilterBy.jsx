@@ -5,7 +5,7 @@ function FilterBy (){
     
     return(
         
-        <div className="bg-[white] min-w-[308px] h-full px-[30px] py-[30px] rounded"> {/* Div Conteiner */}
+        <div className="bg-[white] min-w-[300px] h-full px-[30px] py-[30px] rounded ml-[100px]"> {/* Div Conteiner */}
         <form>
 
         <div className="pb-[20px] border-b-[1px] border-[#CCCCCC] font-bold text-[#474747] text-[16px]"> {/* Div FiltrarBy */}

@@ -1,14 +1,12 @@
 const ProductOptionsModel = require('../../models/ProductOptionsModel');
-
-module.exports = async(request,response)=>{
-
+module.exports = async(request, response)=>{
     try {
         let Options = []
     for(let options of request.body){
         Options.push({
             product_id: request.params.id,
             ...options,
-            values: options.value.join()
+            values: options.values.join()
         })
     }
     Options = await ProductOptionsModel.bulkCreate(Options)

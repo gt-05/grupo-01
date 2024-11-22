@@ -25,23 +25,24 @@ publicRoutes.get('/products/:id/images',ListImagesController);
 publicRoutes.get('/products/:id/options',AllOptionsController);
 publicRoutes.get('/categories',AllCategoryController);
 publicRoutes.get('/categories/:id',GetByIdCategory);
-
-// Rota ControllerProduto create
-publicRoutes.post('/products',CreateController);
-publicRoutes.post('/products/categories',CreateCategoryController);
-publicRoutes.post('/products/:id/options', CreateOptionsController);
-publicRoutes.post('/products/:id/images',CreateImagesController);
 publicRoutes.get('/products/:slug',GetBySlug);
 
+// Rota ControllerProduto create
+privateRoutes.post('/products',CreateController);
+privateRoutes.post('/products/categories',CreateCategoryController);
+privateRoutes.post('/products/:id/options', CreateOptionsController);
+privateRoutes.post('/products/:id/images',CreateImagesController);
+
 // Rota ControllerProduto upgrade
-publicRoutes.put('/products/:Productid/options/:id',UpdateOptions)
-publicRoutes.put('/products/:id',UpdateController);
-publicRoutes.put('/products/:id/images/:imageId',UpdateImagesController);
-publicRoutes.put('/categories/:id',UpdateCategory);
+privateRoutes.put('/products/:Productid/options/:id',UpdateOptions)
+privateRoutes.put('/products/:id',UpdateController);
+privateRoutes.put('/products/:id/images/:imageId',UpdateImagesController);
+privateRoutes.put('/categories/:id',UpdateCategory);
 
 // Rota ControllerProduto delete
-publicRoutes.delete('/products/:id',DeleteController);
-publicRoutes.delete('/products/:Productid/options/:id', DeleteOptions);
-publicRoutes.delete('/products/:productId/images/:id',DeleteImageController);
-publicRoutes.delete('/categories/:id',DeleteCategory);
+privateRoutes.delete('/products/:id',DeleteController);
+privateRoutes.delete('/products/:Productid/options/:id', DeleteOptions);
+privateRoutes.delete('/products/:productId/images/:id',DeleteImageController);
+privateRoutes.delete('/categories/:id',DeleteCategory);
+
 module.exports = [publicRoutes, privateRoutes];

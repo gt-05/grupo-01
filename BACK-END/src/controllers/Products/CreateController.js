@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require("path");
 const ProductModel = require("../../models/ProductModel");
 const {saveByUrl} = require('../../services/product-images');
-const ProductImageModel = require('../../models/ProductImageModel')
+const ProductImageModel = require('../../models/ProductImageModel');
 
 module.exports = async (request, response) => {
     let {
@@ -43,10 +43,9 @@ module.exports = async (request, response) => {
         message:"produto criado com sucesso!",
         product});
 }catch(error){
-    console.log(error.message);
-     response.status(400)
+     response.status(200)
         return response.json({
-            message: "Erro ao salvar imagens do produto: " + product.id
+            message: "Produto criado sem imagens"
         })
 }
 }

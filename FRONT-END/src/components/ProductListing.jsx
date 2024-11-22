@@ -37,5 +37,3 @@ function ProductListing(props) {
 }
 
 export default ProductListing;
-
-
