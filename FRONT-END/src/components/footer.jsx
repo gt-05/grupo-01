@@ -3,6 +3,8 @@ export default function Footer() {
     return (
 
         <>
+
+
             <footer className="w-full h-[380px] text-white bg-[#1F1F1F] ">
 
                 <div className="flex pt-8 justify-center">
