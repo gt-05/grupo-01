@@ -28,7 +28,7 @@ function ProductListingPage(){
                 </select>
                 </div>
                 </Section>
-                <div className='flex mt-10'>
+                <div className='flex mt-10 gap-10'>
                 <FilterBy/>
                 <ProductListing />
                 </div>

@@ -61,7 +61,7 @@ function ProductViewPage(props){
                     link = {
                     {
                         "text": "Ver todos",
-                        "href": "http://redirect.link"
+                        "href": "http://localhost:5173/ProductListing"
                     }
 
                     }>
