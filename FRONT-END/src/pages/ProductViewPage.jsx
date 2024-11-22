@@ -18,10 +18,10 @@ function ProductViewPage(props){
                     images = {
                         [
                         {"src": "../src/assets/sapato-nike.png"},
-                        {"src": "../src/assets/sapato-nike.png"},
-                        {"src": "../src/assets/sapato-nike.png"},
-                        {"src": "../src/assets/sapato-nike.png"},
-                        {"src": "../src/assets/sapato-nike.png"},
+                        {"src": "../src/assets/sapato-nike-2.png"},
+                        {"src": "../src/assets/sapato-nike-3.png"},
+                        {"src": "../src/assets/sapato-nike-4.png"},
+                        {"src": "../src/assets/sapato-nike-5.png"}
                         
                         ]
                     }
@@ -40,6 +40,8 @@ function ProductViewPage(props){
                     mtproductslide= "55px"              
                     hslide= "20px"
                     wslide= "780px"
+                    
+                    himageslide= "300px"
                     
                 />
             

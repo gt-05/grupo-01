@@ -16,8 +16,11 @@ function App () {
                 images= {
                     [
                     {"src": "../src/assets/sapato-nike.png"},
-                    {"src": "../src/assets/sapato-nike.png"},
-                    {"src": "../src/assets/sapato-nike.png"}
+                    {"src": "../src/assets/sapato-nike-2.png"},
+                    {"src": "../src/assets/sapato-nike-3.png"},
+                    {"src": "../src/assets/sapato-nike-4.png"},
+                    {"src": "../src/assets/sapato-nike-5.png"}
+                    
                     
                     
 
@@ -27,7 +30,7 @@ function App () {
                 height= ""
                 radius= ""
                 display= ""
-                mlimage= "700px"
+                mlimage= "650px"
                 mtimage="150px"
                 mtslide= ""
                 rotate='origin-bottom -rotate-[19.34deg] hover:rotate-[25deg] duration-500'
@@ -37,6 +40,9 @@ function App () {
                 mtproductsslide= ""
                 hslide= ""
                 wslide= ""
+                wimageslide= "600px"
+                himageslide= "300px"
+
 
                 
             />
