@@ -1,3 +1,4 @@
+
 import {useState} from 'react';
 import ButtonOffer from './ButtonOffer';
 
@@ -12,10 +13,11 @@ export default function Gallery(props) {
 
 
 	let imgs = [
-		{"src": `${props.images}`},
-		{"src": `${props.images}`},
-		{"src": `${props.images}`},
-		{"src": `${props.images}`}
+		{"src": "../src/assets/sapato-nike.png"},
+		{"src": "../src/assets/sapato-nike.png"},
+		{"src": "../src/assets/sapato-nike.png"},
+		{"src": "../src/assets/sapato-nike.png"},
+		{"src": "../src/assets/sapato-nike.png"}
 	]
 
 
@@ -31,6 +33,20 @@ export default function Gallery(props) {
 			setCurrent(position < 0 ? (imgs.length - 1) * 100 : position);
 		}
 	};
+	function handlerThumbnailClick(index) {
+		setCurrent(index * 100);
+		
+	}
+
+	let thumbnails = imgs.map((img, index) => {
+		return (
+			<div key={index} className={`thumbnail w-[110px] h-[80px] bg-[#C95060] rounded flex items-center justify-center min-w-[60px] m-1 cursor-pointer flex ${props.displayThumbs}`} onClick={() => handlerThumbnailClick(index)}>
+				<img className= "w-[110px] h-[55px] object-cover"
+				src={img.src}
+				alt={`thumbnail ${index + 1}`} />
+			</div>
+		);
+	});
 
 
 
@@ -61,7 +77,7 @@ export default function Gallery(props) {
 		<>
 		<div className={`max-w-[${props.wslide}] h-[${props.hslide}]`}>
 			
-			<div className={`slider relative overflow-hidden mt-[${props.mtproductslide}] ml-[${props.mlproductslide}] w-[${props.width}] h-[${props.height}] bg-${props.bgimagem}`} >
+			<div className={`slider relative overflow-hidden rounded mt-[${props.mtproductslide}] ml-[${props.mlproductslide}] w-[${props.width}] h-[${props.height}] bg-${props.bgimagem}`} >
 				<div 
 					className="slides flex ease-in-out duration-500"
 					style={css}>
@@ -85,32 +101,10 @@ export default function Gallery(props) {
 		
 
 
-		<div className={`flex gap-8 absolute top-[865px] ml-[55px] ${props.displayThumbs}`}>
-			<button>
-				<div className=" w-[110px] h-[80px] bg-red-200 rounded flex items-center justify-center">
-					<img className=" w-[95px] " src="/src/assets/sapato-nike.png"/>
-				</div>
-			</button>
-			<button>
-				<div  className=" w-[110px] h-[80px] bg-green-400 rounded flex items-center justify-center">
-					<img className="  w-[95px] " src="/src/assets/sapato-nike.png"/>
-				</div>
-			</button>
-			<button>
-				<div className="w-[110px] h-[80px] bg-gray-300 rounded flex items-center justify-center">
-					<img className="  w-[95px] " src="/src/assets/sapato-nike.png"/>
-				</div>
-			</button>
-			<button>
-				<div  className=" w-[110px] h-[80px] bg-yellow-200 rounded flex items-center justify-center">
-					<img className="  w-[95px] " src="/src/assets/sapato-nike.png"/>
-				</div>
-			</button>
-			<button>
-				<div className=" w-[110px] h-[80px] bg-[#C95060] rounded flex items-center justify-center">
-					<img className="  w-[95px] " src="/src/assets/sapato-nike.png"/>
-				</div>
-			</button>
+		<div className={`flex absolute top-[865px] ml-[55px] ${props.displayThumbs}`}>
+			<div className="thumbnails gap-6 flex justify-center mt-4">
+				{thumbnails}
+			</div>
 		</div>
 
 		</>

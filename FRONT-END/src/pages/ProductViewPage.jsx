@@ -20,7 +20,8 @@ function ProductViewPage(props){
                         {"src": "../src/assets/sapato-nike.png"},
                         {"src": "../src/assets/sapato-nike.png"},
                         {"src": "../src/assets/sapato-nike.png"},
-                        {"src": "../src/assets/sapato-nike.png"}
+                        {"src": "../src/assets/sapato-nike.png"},
+                        {"src": "../src/assets/sapato-nike.png"},
                         
                         ]
                     }
@@ -39,6 +40,7 @@ function ProductViewPage(props){
                     mtproductslide= "55px"              
                     hslide= "20px"
                     wslide= "780px"
+                    
                 />
             
                 <BuyBox
